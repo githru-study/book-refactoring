@@ -24,8 +24,8 @@
 |기법명|담당|
 |:--------|:----:|
 |||
-|[6) 변수 캡슐화하기](https://github.com/githru-study/book-refactoring/blob/main/ch06)%20first-set-of-refactorings/06)%20encapsulate-variable.md)|조예진|
-|[7) 변수 이름 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch06)%20first-set-of-refactorings/07)%20rename-variable.md)|조예진|
-|[8) 매개변수 객체 만들기](https://github.com/githru-study/book-refactoring/blob/main/ch06)%20first-set-of-refactorings/08)%20introduce-parameter-object.md)|조예진|
-|[9) 여러 함수를 클래스로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06)%20first-set-of-refactorings/09)%20combine-functions-into-class.md)|조예진|
-|[10) 여러 함수를 변환 함수로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06)%20first-set-of-refactorings/10)%20combine-functions-into-transform.md)|조예진|
+|[6) 변수 캡슐화하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/06\)%20encapsulate-variable.md)|조예진|
+|[7) 변수 이름 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/07\)%20rename-variable.md)|조예진|
+|[8) 매개변수 객체 만들기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/08\)%20introduce-parameter-object.md)|조예진|
+|[9) 여러 함수를 클래스로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/09\)%20combine-functions-into-class.md)|조예진|
+|[10) 여러 함수를 변환 함수로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/10\)%20combine-functions-into-transform.md)|조예진|
