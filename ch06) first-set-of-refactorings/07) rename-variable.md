@@ -36,5 +36,5 @@ export type SelectedDataProps = ClusterNode[]; // 현재 사용자가 선택한 
 import type { ClusterNode } from "./NodeTypes.temp";
 
 export type GlobalProps = { clusterNodes: ClusterNode[] };
-export type SelectedClustersProps = ClusterNode[];
+// export type SelectedClusterNodes = GlobalProps["clusterNodes"]; // 혹은 그냥 GlobalProps["clusterNodes"] 쓰기
 ```
