@@ -35,6 +35,6 @@ export type SelectedDataProps = ClusterNode[]; // 현재 사용자가 선택한 
 // @view/src/types/global.ts
 import type { ClusterNode } from "./NodeTypes.temp";
 
-export type GlobalProps = { clusters: ClusterNode[] };
-export type SelectedClusters = ClusterNode[];
+export type GlobalProps = { clusterNodes: ClusterNode[] };
+export type SelectedClustersProps = ClusterNode[];
 ```
