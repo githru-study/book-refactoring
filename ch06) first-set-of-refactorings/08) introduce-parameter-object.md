@@ -76,7 +76,7 @@ class Pagination {
 function getPosts(
     page: number,
     count: number,
-    pagination: Pagenation
+    pagination: Pagination
 ): Promise<PostListElement[]> {
     const [start, end] = [page * count, (page + 1) * count];
     const dirFiles = this.getAllPostNames(true).slice(start, end);
@@ -112,7 +112,7 @@ await getPosts(1, 10, pagination);
 function getPosts(
     page: number,
     count: number,
-    pagination: Pagenation
+    pagination: Pagination
 ): Promise<PostListElement[]> {
     const [start, end] = [pagination.page * pagination.count, (pagination.page + 1) * pagination.count];
     const dirFiles = this.getAllPostNames(true).slice(start, end);
@@ -123,7 +123,7 @@ async function getPostsByTag(
     page: number,
     count: number,
     tag: string,
-    pagination: Pagenation
+    pagination: Pagination
 ): Promise<PostListElement[]> {
     const [start, end] = [pagination.page * pagination.count, (pagination.page + 1) * pagination.count];
     return (await this.getAllPostMeta())
@@ -141,7 +141,7 @@ interface PageRange {
 }
 
 class Pagination {
-    constructor(private page: number, private count: number) { /**/
+    constructor(private readonly page: number, private readonly count: number) { /**/
     }
 
     public getRange(): PageRange {
@@ -153,7 +153,7 @@ class Pagination {
 }
 
 function getPosts(
-    pagination: Pagenation
+    pagination: Pagination
 ): Promise<PostListElement[]> {
     const {start, end} = pagination.getRange();
     const dirFiles = this.getAllPostNames(true).slice(start, end);
@@ -162,7 +162,7 @@ function getPosts(
 
 async function getPostsByTag(
     tag: string,
-    pagination: Pagenation
+    pagination: Pagination
 ): Promise<PostListElement[]> {
     const {start, end} = pagination.getRange();
     return (await this.getAllPostMeta())
