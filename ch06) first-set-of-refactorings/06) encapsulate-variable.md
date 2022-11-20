@@ -79,8 +79,35 @@ export class CommitNodeClass {
     return { ...this.commit };
   }
 }
+
+// CommitNode 객체를 생성하던 곳에서, CommitNodeClass의 instance를 생성하도록 변경
+export function buildCommitDict(commits: CommitRaw[]): CommitDict {
+  return new Map(commits.map((commit) => [commit.id, new CommitNodeClass(commit)]));
+}
 ```
 
-1. 변수를 직접 참조하는 부분을 캡슐화 함수를 호출하도록 변경한다
-2. 변수의 접근 범위를 제한한다 (public ⇒ private)
-   - 일단 private으로 바꾸고 → 빌드 돌렸을때 나오는 오류를 보고 수정하면 편하다
+2. 변수를 직접 참조하는 부분을 캡슐화 함수를 호출하도록 변경한다
+```ts
+// 전
+                const nestedMergeParentCommits = nestedMergeParentCommitIds
+                    .map((commitId) => commitDict.get(commitId))
+                    .filter((node) => node !== undefined)
+                    .filter((node) => node.stemId !== csmNode.base.stemId &&
+                    node.stemId !== squashStemId);
+                    
+// 후
+                const nestedMergeParentCommits = nestedMergeParentCommitIds
+                    .map((commitId) => commitDict.get(commitId))
+                    .filter((node) => node !== undefined)
+                    .filter((node) => node.getStemId() !== csmNode.base.getStemId() &&
+                    node.getStemId() !== squashStemId);
+```
+
+3. 변수의 접근 범위를 제한한다 (public ⇒ private)
+   - 2, 3번의 순서를 바꿔서, 일단 private으로 바꾸고 → 빌드 돌렸을때 나오는 오류를 보고 수정하면 편하다
+
+```ts
+export class CommitNodeClass {
+  // eslint-disable-next-line no-useless-constructor
+  constructor(public commit: CommitRaw, private stemId: string) {}
+```
