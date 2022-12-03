@@ -24,6 +24,11 @@
 |기법명|담당|
 |:--------|:----:|
 |||
+|[1) 함수 추출하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/01\)extract-function.md)|김민정|
+|[2) 함수 인라인 하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/02\)inline-function.md)|김민정|
+|[3) 변수 추출하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/03\)extract-variable.md)|김민정|
+|[4) 변수 인라인 하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/04\)inline-variable.md)|김민정|
+|[5) 함수 선언 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/05\)change-function-declaration.md)|김민정|
 |[6) 변수 캡슐화하기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/06\)%20encapsulate-variable.md)|조예진|
 |[7) 변수 이름 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/07\)%20rename-variable.md)|조예진|
 |[8) 매개변수 객체 만들기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/08\)%20introduce-parameter-object.md)|조예진|
