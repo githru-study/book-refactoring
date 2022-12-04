@@ -34,3 +34,15 @@
 |[8) 매개변수 객체 만들기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/08\)%20introduce-parameter-object.md)|조예진|
 |[9) 여러 함수를 클래스로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/09\)%20combine-functions-into-class.md)|조예진|
 |[10) 여러 함수를 변환 함수로 묶기](https://github.com/githru-study/book-refactoring/blob/main/ch06\)%20first-set-of-refactorings/10\)%20combine-functions-into-transform.md)|조예진|
+
+
+### CHAPTER 07. 캡슐화
+
+|기법명|담당|
+|:--------|:----:|
+|||
+|[5) 클래스 추출하기](./ch07\)%20encapsulation/05\)%20extract-class.md)|안바울|
+|[6) 클래스 인라인하기](./ch07\)%20encapsulation/06\)%20inline-class.md)|안바울|
+|[7) 위임 숨기기](./ch07\)%20encapsulation/07\)%20hide-delegate.md)|안바울|
+|[8) 중개자 제거하기](./ch07\)%20encapsulation/08\)%20remove-middle-man.md)|안바울|
+|[9) 알고리즘 교체하기](./ch07\)%20encapsulation/09\)%20substitute-algorithm.md)|안바울|
