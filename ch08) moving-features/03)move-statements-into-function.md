@@ -24,16 +24,45 @@
 
 ## 예시
 
-## 출처
+## 출처 -> https://school.programmers.co.kr/learn/courses/30/lessons/12946
 
 ### 리팩터링 전
 
 ```js
+const answer = [];
+
+function solution(n) {
+    hanoi(n, 1, 3, 2);
+    return answer;
+}
+
+const hanoi = (n, src, dst, mid) => {
+    if (n === 1) {
+     return answer.push([src, dst]);
+    }
+    else {
+        hanoi(n - 1, src, mid, dst);
+        answer.push([src, dst]);
+        hanoi(n - 1, mid, dst, src);
+    }
+}
 
 ```
 
 ### 리팩터링 후
 
 ```js
-
+function solution(n) {
+  const answer = [];
+  const hanoi = (n, from, to, by) => {
+    if (n === 1) {
+      return answer.push([from, to]);
+    }
+    hanoi(n - 1, from, by, to);
+    answer.push([from, to]);
+    hanoi(n - 1, by, to, from);
+  };
+  hanoi(n, 1, 3, 2);
+  return answer;
+}
 ```
