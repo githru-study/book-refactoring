@@ -64,3 +64,8 @@
 | 기법명                                                          | 담당  |
 |:-------------------------------------------------------------|:---:|
 | [1) 변수 쪼개기](./ch09\)%20organizing-data/01\)%20split-variable.md) | 조예진 |
+| [2) 필드 이름 바꾸기](./ch09\)%20organizing-data/02\)%20rename-field.md) | 안바울 |
+| [3) 파생 변수를 질의 함수로 바꾸기](./ch09\)%20organizing-data/03\)%20replace-derived-variable-with-query.md) | 안바울 |
+| [4) 참조를 값으로 바꾸기](./ch09\)%20organizing-data/04\)%20change-reference-to-value.md) | 안바울 |
+| [5) 값을 참조로 바꾸기](./ch09\)%20organizing-data/05\)%20change-value-to-reference.md) | 안바울 |
+| [6) 매직 리터럴 바꾸기](./ch09\)%20organizing-data/06\)%20replace-magic-literal.md) | 안바울 |
