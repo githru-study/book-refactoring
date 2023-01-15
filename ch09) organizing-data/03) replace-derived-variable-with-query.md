@@ -28,7 +28,7 @@ class Price {
   set discount(num) {
     const old = this._discount
     this._discount = num
-    this._discountedTotal += old - num
+    this._discountedTotal += (old - num)
   }
 }
 ```
@@ -37,8 +37,9 @@ class Price {
 
 ```typescript
 class Price {
-  private _baseTotal:number
   private _discount:number
+
+  constructor(private readonly _baseTotal:number) {}
 
   get discountedTotal() { return this._baseTotal - this._discount }
   set discount(num) {
@@ -46,6 +47,7 @@ class Price {
   }
 }
 ```
+
 
 ---
 [목차](../README.md)
