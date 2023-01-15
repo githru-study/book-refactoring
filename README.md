@@ -53,7 +53,11 @@
 
 | 기법명                                                                                    |담당|
 |:---------------------------------------------------------------------------------------|:----:|
-|||
+| [1) 함수 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20moving-features/01)move-function.md)| 김민정 |
+| [2) 필드 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20moving-features/02)move-field.md)| 김민정 |
+| [3) 문장을 함수로 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20moving-features/03)move-statements-into-function.md)| 김민정 |
+| [4) 문장을 호출한 곳으로 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20moving-features/04)move-statements-to-callers.md)| 김민정 |
+| [5) 인라인 코드를 함수로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20moving-features/05)replace-inline-code-with-function-call.md)    |김민정 |
 | [6) 문장 슬라이드하기](./ch08\)%20moving-features/06\)%20slide-statements.md)                  | 조예진 |
 | [7) 반복문 쪼개기](./ch08\)%20moving-features/07\)%20split-loop.md)                          | 조예진 |
 | [8) 반복문을 파이프라인으로 바꾸기](./ch08\)%20moving-features/08\)%20replace-loop-with-pipeline.md) | 조예진 |
