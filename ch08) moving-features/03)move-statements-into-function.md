@@ -1,4 +1,4 @@
-# 8.3 문장을 함수로 옮기기 - move statements into function
+# 8.3 문장을 함수로 옮기기 move statements into function
 
 ## 요약
 - 함수와 같이 사용하는 문장을 함수 안으로 이동하는 것을 말한다.

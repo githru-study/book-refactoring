@@ -1,4 +1,4 @@
-# 8.4 문장을 호출한 곳으로 옮기기 - move statements to callers
+# 8.4 문장을 호출한 곳으로 옮기기 move statements to callers
 
 ## 요약
 - 함수의 기능을 쪼개서 문장을 밖으로 이동하는 것을 말한다.
