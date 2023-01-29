@@ -19,38 +19,4 @@
 
 ## 예시
 
-## 출처 -> https://school.programmers.co.kr/learn/courses/30/lessons/42747
-
-### 리팩터링 전
-
-```js
-function solution(citations) {
-    let hIndex = 0;
-    citations.sort((a,b)=>(b-a))
-    
-    while(hIndex + 1 <= citations[hIndex]){
-        hIndex++;
-    }
-    return hIndex
-}
-
-```
-
-### 리팩터링 후
-
-```js
-function solution(citations) {
-    let answer = 0;
-    const sorted = citations.sort(sortIndex)
-    for(let i = 0; i < sorted.length; i++) {
-        if(sorted[i] < i+ 1) {
-            return i;
-        } 
-    }
-    return citations.length;
-}
-
-function sortIndex(a, b) {
-    return b-a;
-}
-```
+.. 고민중

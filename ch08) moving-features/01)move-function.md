@@ -4,6 +4,7 @@
 A 클래스의 메서드를 B 클래스로 이동할 때,A 모듈의 함수를 B 모듈로 이동할 때, 함수가 자신이 속한 모듈의 요소들보다 다른 모듈의 요소들을 더 많이 참조할 때, 함수를 한 곳에서 다른 곳으로 이동 하는 것을 말한다 .
 
 ## why?
+
 모듈성 - 프로그램의 어떤 부분을 수정할때 해당 기능과 깊이 관련된 작은 일부만 이해해도 수정이 가능하도록 하는 능력을 말한다.
 코드가 모듈성이 높은 코드는 기능 수정시 하나의 함수 또는 하나의 클래스,파일 안에 코드만 이해해도 수정을 할수 있는 코드이다.
 
@@ -27,30 +28,3 @@ A 클래스의 메서드를 B 클래스로 이동할 때,A 모듈의 함수를 B
 7. 소스 함수를 인라인할지 고민해본다.
 
 ## 예시
-
-## 출처 -> https://school.programmers.co.kr/learn/courses/30/lessons/12954
-
-### 리팩터링 전
-
-```js
-function solution(x, n) {
-    let answer = [];
-    for (let nums = 1; nums<=n; nums++){
-        answer.push(x*nums);
-    }
-    return answer;
-}
-
-```
-
-### 리팩터링 후
-
-```js
-function solution(x, n) {
-    return Nums(x,n);
-}
-
-const Nums = (x, n)=>{
-    return Array.from({length: n},(v,index)=>(index+1)*x);
-};
-```

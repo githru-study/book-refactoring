@@ -13,4 +13,22 @@
 
 ## 예시
 
-...고민중
+## 출처
+
+- 책에 있는 코드
+
+### 리팩터링 전
+
+```js
+let appliesToMass = false;
+for(const current of state){
+    if(s === "MA") appliesToMass = true;
+}
+```
+
+### 리팩터링 후
+
+```js
+appliesToMass = states.includes("MA")
+
+```
