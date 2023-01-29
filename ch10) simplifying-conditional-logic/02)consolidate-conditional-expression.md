@@ -32,10 +32,10 @@ function ScoreConditional(Student) {
 ```typescript
 
 function Credit(Student) {
-  if (ScoreConditional()) return F;
+  if (ScoreConditional(Student)) return F;
 }
 
-function isNotEligibleForDisability() {
+function ScoreConditional(Student) {
   return ((Student.AbsencesNumber > 3) 
         || (Student.TotalScore < 30);
   );
