@@ -26,13 +26,13 @@ function check2022Health(person){
     if(person.isMale){
         return false;
     }else{
-        if(person.year < 40){
+        if(person.year % 2 === 1){
             return false;
         }else{
-            if(person.year % 2 === 0){
-                return true;
-            }else{
+            if(person.age < 40){
                 return false;
+            }else{
+                return true;
             }
         }
     }
@@ -46,12 +46,12 @@ function check2022Health(person){
     if(person.isMale){
         return false;
     }
-    if(person.year < 40){
+    if(person.year % 2 === 1){
         return false;
     }
-    if(person.year % 2 === 0){
-    return true;
+    if(person.age < 40){
+        return false;
     }
-    return false;
+   return true;
 }
 ```
