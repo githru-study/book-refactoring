@@ -73,3 +73,17 @@
 | [4) 참조를 값으로 바꾸기](./ch09\)%20organizing-data/04\)%20change-reference-to-value.md) | 안바울 |
 | [5) 값을 참조로 바꾸기](./ch09\)%20organizing-data/05\)%20change-value-to-reference.md) | 안바울 |
 | [6) 매직 리터럴 바꾸기](./ch09\)%20organizing-data/06\)%20replace-magic-literal.md) | 안바울 |
+
+### CHAPTER 10. 조건부 로직 간소화
+
+| 기법명                                                                                           | 담당  |
+|:----------------------------------------------------------------------------------------------|:---:|
+| [6) 변수 쪼개기](.ch10\)%20simplifying-conditional-logic/06\)%20introduce-assertion.md)            | 조예진 |
+| [7) 제어 플래그를 탈출문으로 바꾸기](.ch10\)%20simplifying-conditional-logic/07\)%20replace-control-flag-with-break.md) | 조예진 |
+
+### CHAPTER 11. API 리팩터링
+| 기법명                                                                                | 담당  |
+|:-----------------------------------------------------------------------------------|:---:|
+| [1) 질의 함수와 변경 함수 분리하기](.ch11\)%20refactoring-apis/01\)%20separate-query-from-modifier.md) | 조예진 |
+| [2) 함수 매개변수화하기](.ch11\)%20refactoring-apis/02\)%20parameterize-function.md) | 조예진 |
+| [3) 플래그 인수 제거하기](.ch11\)%20refactoring-apis/03\)%20remove-flag-argument.md) | 조예진 |
