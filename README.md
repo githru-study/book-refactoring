@@ -78,7 +78,7 @@
 
 | 기법명                                                                                                        | 담당  |
 |:-----------------------------------------------------------------------------------------------------------|:---:|
-| [6) 변수 쪼개기](./ch10\)%20simplifying-conditional-logic/06\)%20introduce-assertion.md)                        | 조예진 |
+| [6) 어서션 추가하기](./ch10\)%20simplifying-conditional-logic/06\)%20introduce-assertion.md)                        | 조예진 |
 | [7) 제어 플래그를 탈출문으로 바꾸기](./ch10\)%20simplifying-conditional-logic/07\)%20replace-control-flag-with-break.md) | 조예진 |
 
 ### CHAPTER 11. API 리팩터링
