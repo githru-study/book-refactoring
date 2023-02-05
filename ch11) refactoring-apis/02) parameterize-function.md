@@ -20,13 +20,21 @@
 ### as-is
 
 ```tsx
+function convertWebPxToMm(px: number) {
+    return px * 25.4 / 96;
+}
 
+function convertPrintPxToMm(px: number) {
+    return px * 25.4 / 300;
+}
 ```
 
 ### to-be
 
 ```tsx
-
+function convertPxToMm(px: number, dpi: number) {
+    return px * 25.4 / dpi;
+}
 ```
 
 ---
