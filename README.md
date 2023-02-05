@@ -78,6 +78,11 @@
 
 | 기법명                                                                                                        | 담당  |
 |:-----------------------------------------------------------------------------------------------------------|:---:|
+| [1) 조건문 분해하기](https://github.com/githru-study/book-refactoring/blob/main/ch10)%20simplifying-conditional-logic/01)decompose-conditional.md)) | 김민정 |
+| [2) 조건식 통합하기](https://github.com/githru-study/book-refactoring/blob/main/ch10)%20simplifying-conditional-logic/02)consolidate-conditional-expression.md) | 김민정 |
+| [3) 중첩 조건문을 보호 구문으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10)%20simplifying-conditional-logic/03)replace-nested-conditional-with-guard-clauses.md) | 김민정 |
+| [4) 조건부 로직을 다형성으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10)%20simplifying-conditional-logic/04)replace-conditional-with-polymorphism.md) | 김민정 |
+| [5) 특이 케이스 추가하기](https://github.com/githru-study/book-refactoring/blob/main/ch10)%20simplifying-conditional-logic/05)introduce-sepcial-case.md) | 김민정 |
 | [6) 어서션 추가하기](./ch10\)%20simplifying-conditional-logic/06\)%20introduce-assertion.md)                        | 조예진 |
 | [7) 제어 플래그를 탈출문으로 바꾸기](./ch10\)%20simplifying-conditional-logic/07\)%20replace-control-flag-with-break.md) | 조예진 |
 
