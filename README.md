@@ -78,7 +78,7 @@
 
 | 기법명                                                                                                        | 담당  |
 |:-----------------------------------------------------------------------------------------------------------|:---:|
-| [1) 조건문 분해하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\%20decompose-conditional.md))) | 김민정 |
+| [1) 조건문 분해하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\%20decompose-conditional.md) | 김민정 |
 | [2) 조건식 통합하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20consolidate-conditional-expression.md) | 김민정 |
 | [3) 중첩 조건문을 보호 구문으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20replace-nested-conditional-with-guard-clauses.md) | 김민정 |
 | [4) 조건부 로직을 다형성으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20replace-conditional-with-polymorphism.md) | 김민정 |
