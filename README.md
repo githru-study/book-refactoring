@@ -53,11 +53,11 @@
 
 | 기법명                                                                                    |담당|
 |:---------------------------------------------------------------------------------------|:----:|
-| [1) 함수 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20move-function.md)| 김민정 |
-| [2) 필드 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20move-field.md)| 김민정 |
-| [3) 문장을 함수로 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20move-statements-into-function.md)| 김민정 |
-| [4) 문장을 호출한 곳으로 옮기기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20move-statements-to-callers.md)| 김민정 |
-| [5) 인라인 코드를 함수로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch08\)%20replace-inline-code-with-function-call.md)| 김민정 |
+| [1) 함수 옮기기](./ch08\)%20moving-features/01\)move-function.md)| 김민정 |
+| [2) 필드 옮기기](./ch08\)%20moving-features/02\)move-field.md)| 김민정 |
+| [3) 문장을 함수로 옮기기](./ch08\)%20moving-features/03\)move-statements-into-function.md)| 김민정 |
+| [4) 문장을 호출한 곳으로 옮기기](./ch08\)%20moving-features/04\)move-statements-to-callers.md)| 김민정 |
+| [5) 인라인 코드를 함수로 바꾸기](./ch08\)%20moving-features/05\)replace-inline-code-with-function-call.md)| 김민정 |
 | [6) 문장 슬라이드하기](./ch08\)%20moving-features/06\)%20slide-statements.md)                  | 조예진 |
 | [7) 반복문 쪼개기](./ch08\)%20moving-features/07\)%20split-loop.md)                          | 조예진 |
 | [8) 반복문을 파이프라인으로 바꾸기](./ch08\)%20moving-features/08\)%20replace-loop-with-pipeline.md) | 조예진 |
@@ -78,11 +78,11 @@
 
 | 기법명                                                                                                        | 담당  |
 |:-----------------------------------------------------------------------------------------------------------|:---:|
-| [1) 조건문 분해하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\%20decompose-conditional.md) | 김민정 |
-| [2) 조건식 통합하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20consolidate-conditional-expression.md) | 김민정 |
-| [3) 중첩 조건문을 보호 구문으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20replace-nested-conditional-with-guard-clauses.md) | 김민정 |
-| [4) 조건부 로직을 다형성으로 바꾸기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20replace-conditional-with-polymorphism.md) | 김민정 |
-| [5) 특이 케이스 추가하기](https://github.com/githru-study/book-refactoring/blob/main/ch10\)%20introduce-sepcial-case.md) | 김민정 |
+| [1) 조건문 분해하기](./ch10\)%20simplifying-conditional-logic/01\)decompose-conditional.md) | 김민정 |
+| [2) 조건식 통합하기](./ch10\)%20simplifying-conditional-logic/02\)consolidate-conditional-expression.md) | 김민정 |
+| [3) 중첩 조건문을 보호 구문으로 바꾸기](./ch10\)%20simplifying-conditional-logic/03\)replace-nested-conditional-with-guard-clauses.md) | 김민정 |
+| [4) 조건부 로직을 다형성으로 바꾸기](./ch10\)%20simplifying-conditional-logic/04\)replace-conditional-with-polymorphism.md) | 김민정 |
+| [5) 특이 케이스 추가하기](./ch10\)%20simplifying-conditional-logic/05\)introduce-sepcial-case.md) | 김민정 |
 | [6) 어서션 추가하기](./ch10\)%20simplifying-conditional-logic/06\)%20introduce-assertion.md)                        | 조예진 |
 | [7) 제어 플래그를 탈출문으로 바꾸기](./ch10\)%20simplifying-conditional-logic/07\)%20replace-control-flag-with-break.md) | 조예진 |
 
