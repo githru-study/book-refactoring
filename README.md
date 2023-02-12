@@ -37,17 +37,17 @@
 
 ### CHAPTER 07. 캡슐화
 
-| 기법명                                                                            |  담당  |
-| :-------------------------------------------------------------------------------- | :----: |
-| [1) 레코드 캡슐화하기](<./ch07)%20encapsulation/01)%20encapsulate-record.md>)     | 김채정 |
-| [2) 컬렉션 캡슐화하기](<./ch07)%20encapsulation/02)%20encapsulate-collection.md>) | 김채정 |
-| [3) 기본형을 객체로 바꾸기]()                                                     | 김채정 |
-| [4) 임시 변수를 질의 함수로 바꾸기]()                                             | 김채정 |
-| [5) 클래스 추출하기](<./ch07)%20encapsulation/05)%20extract-class.md>)            | 안바울 |
-| [6) 클래스 인라인하기](<./ch07)%20encapsulation/06)%20inline-class.md>)           | 안바울 |
-| [7) 위임 숨기기](<./ch07)%20encapsulation/07)%20hide-delegate.md>)                | 안바울 |
-| [8) 중개자 제거하기](<./ch07)%20encapsulation/08)%20remove-middle-man.md>)        | 안바울 |
-| [9) 알고리즘 교체하기](<./ch07)%20encapsulation/09)%20substitute-algorithm.md>)   | 안바울 |
+| 기법명                                                                                      |  담당  |
+| :------------------------------------------------------------------------------------------ | :----: |
+| [1) 레코드 캡슐화하기](<./ch07)%20encapsulation/01)%20encapsulate-record.md>)               | 김채정 |
+| [2) 컬렉션 캡슐화하기](<./ch07)%20encapsulation/02)%20encapsulate-collection.md>)           | 김채정 |
+| [3) 기본형을 객체로 바꾸기](<./ch07)%encapsulation/03)%replace-primitive-with-object.md>)   | 김채정 |
+| [4) 임시 변수를 질의 함수로 바꾸기](<./ch07)%encapsulation/04)%replace-temp-with-query.md>) | 김채정 |
+| [5) 클래스 추출하기](<./ch07)%20encapsulation/05)%20extract-class.md>)                      | 안바울 |
+| [6) 클래스 인라인하기](<./ch07)%20encapsulation/06)%20inline-class.md>)                     | 안바울 |
+| [7) 위임 숨기기](<./ch07)%20encapsulation/07)%20hide-delegate.md>)                          | 안바울 |
+| [8) 중개자 제거하기](<./ch07)%20encapsulation/08)%20remove-middle-man.md>)                  | 안바울 |
+| [9) 알고리즘 교체하기](<./ch07)%20encapsulation/09)%20substitute-algorithm.md>)             | 안바울 |
 
 ### CHAPTER 08. 기능 이동
 
@@ -88,12 +88,12 @@
 
 ### CHAPTER 11. API 리팩터링
 
-| 기법명                                                                                        |  담당  |
-|:-------------------------------------------------------------------------------------------|:----:|
-| [1) 질의 함수와 변경 함수 분리하기](<./ch11)%20refactoring-apis/01)%20separate-query-from-modifier.md>) | 조예진  |
-| [2) 함수 매개변수화하기](<./ch11)%20refactoring-apis/02)%20parameterize-function.md>)               | 조예진  |
-| [3) 플래그 인수 제거하기](<./ch11)%20refactoring-apis/03)%20remove-flag-argument.md>)               | 조예진  |
-| [4) 객체 통째로 넘기기]()                                                                          | 김채정  |
-| [5) 매개변수를 질의 함수로 바꾸기](./ch11\)%20refactoring-apis/05\)%20replace-parameter-with-query.md)               | 안바울 |
-| [6) 질의함수를 매개변수로 바꾸기](<./ch11)%20refactoring-apis/06)%20replace-query-with-parameter.md>)   | 김민정  |
-| [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                  | 조예진  |
+| 기법명                                                                                                  |  담당  |
+| :------------------------------------------------------------------------------------------------------ | :----: |
+| [1) 질의 함수와 변경 함수 분리하기](<./ch11)%20refactoring-apis/01)%20separate-query-from-modifier.md>) | 조예진 |
+| [2) 함수 매개변수화하기](<./ch11)%20refactoring-apis/02)%20parameterize-function.md>)                   | 조예진 |
+| [3) 플래그 인수 제거하기](<./ch11)%20refactoring-apis/03)%20remove-flag-argument.md>)                   | 조예진 |
+| [4) 객체 통째로 넘기기](<./ch11)%refactoring-apis/04)%20preserve-whole-object.md>)                      | 김채정 |
+| [5) 매개변수를 질의 함수로 바꾸기](<./ch11)%20refactoring-apis/05)%20replace-parameter-with-query.md>)  | 안바울 |
+| [6) 질의함수를 매개변수로 바꾸기](<./ch11)%20refactoring-apis/06)%20replace-query-with-parameter.md>)   | 김민정 |
+| [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                         | 조예진 |
