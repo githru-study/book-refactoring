@@ -49,9 +49,10 @@ class User {
  * 로그인한 유저 정보를 관리
  */
 class UserStore {
-  private user: User = new User();
+  private user: User;
   
   public login(id: string, name: string) {
+    this.user = new User();
     this.user.id = id;
     this.user.name = name;
   }
@@ -93,13 +94,13 @@ class User {
 class UserStore {
   private user: User = new User('');
 
-  public onLogin(id: string, name: string) {
+  public login(id: string, name: string) {
     // id는 생성자에서만 변경 가능하므로 새로운 user 객체 생성
     this.user = new User(id);
     this.user.name = name;
   }
 
-  public onChangeName(newName: string) {
+  public changeName(newName: string) {
     this.user.name = newName;
   }
 }
