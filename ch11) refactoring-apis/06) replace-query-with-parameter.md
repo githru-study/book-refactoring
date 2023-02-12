@@ -25,10 +25,12 @@
 ## 리팩토링 전 코드
 
 ```js
+class HeatingPan(){
 get targetTemperature(){
     if (thermostat.selectedTemperature > this._max) return this._max;
     else if (thermostat.selectedTemperature < this._min) return this._min;
     else return thermostat.selectedTemperature;
+}
 }
 
 if (thePlan.targetTemperature > thermostat.currentTemperature) setToHeat();
@@ -38,13 +40,13 @@ else setOff();
 ```
 ## 리팩토링 과정 코드
 
-```js
+```js 
 get targetTemperature(){
-    const selectedTemperature = thermostat.selectedTemperature; 
+    const selectedTemperature = thermostat.selectedTemperature; //제거 대상인 원소를 변수로 지정해줌
     return this. TargetTemperature(selectedTemperature); 
 }
 
-TargetTemperature(selectedTemperature){     //질의코드를 사용하지 않는 부분들은 함수로 만들어줌
+TargetTemperature(selectedTemperature){     //질의코드를 사용하지 않는 부분들은 따로 분리해서 함수로 만들어줌
     if (selectedTemperature> this._max) return this._max;
     else if (selectedTemperature < this._min) return this._min;
     else return selectedTemperature;
@@ -54,7 +56,7 @@ TargetTemperature(selectedTemperature){     //질의코드를 사용하지 않�
 ```js
 // 추출한 변수를 인라인 하여 지우고, 밑에 있는 호출자도 인라인해준다
 get targetTemperature(){ 
-    return this. TargetTemperature(thermostat.selectedTemperature); 
+    return this. TargetTemperature(thermostat.selectedTemperature); // 이 부분에 분리한 부분들을 TargetTemperature(selectedTemperature) 안에 있는 부분들을 다시 채워준다
 }
 
 if (thePlan.targetTemperature(thermostat.selectedTemperature) > 
@@ -86,3 +88,4 @@ else if(thePlan.targetTemperature(thermostat.selectedTemperature) < thermostat.c
 else 
     setOff();
 ```
+
