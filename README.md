@@ -94,5 +94,6 @@
 | [2) 함수 매개변수화하기](<./ch11)%20refactoring-apis/02)%20parameterize-function.md>)               | 조예진  |
 | [3) 플래그 인수 제거하기](<./ch11)%20refactoring-apis/03)%20remove-flag-argument.md>)               | 조예진  |
 | [4) 객체 통째로 넘기기]()                                                                          | 김채정  |
+| [5) 매개변수를 질의 함수로 바꾸기](./ch11\)%20refactoring-apis/05\)%20replace-parameter-with-query.md)               | 안바울 |
 | [6) 질의함수를 매개변수로 바꾸기](<./ch11)%20refactoring-apis/06)%20replace-query-with-parameter.md>)   | 김민정  |
 | [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                  | 조예진  |
