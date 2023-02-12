@@ -35,7 +35,7 @@ ex) 해당함수가 알지 못했으면 하는 요소에 접근해야하는 상�
 ```typescript
 avaliableVacation(employee, employee.grade)
 
-function avaliableVacation(employee: Employee, employee.grade: number) {
+function avaliableVacation(employee: Employee, grade: number) {
     // ...
 }
 ```
