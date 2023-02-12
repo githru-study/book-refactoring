@@ -92,3 +92,4 @@
 | [1) 질의 함수와 변경 함수 분리하기](./ch11\)%20refactoring-apis/01\)%20separate-query-from-modifier.md) | 조예진 |
 | [2) 함수 매개변수화하기](./ch11\)%20refactoring-apis/02\)%20parameterize-function.md)               | 조예진 |
 | [3) 플래그 인수 제거하기](./ch11\)%20refactoring-apis/03\)%20remove-flag-argument.md)               | 조예진 |
+| [3) 플래그 인수 제거하기](./ch11\)%20refactoring-apis/06\)%20replace-query-with-parameter.md)               | 김민정 |
