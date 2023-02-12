@@ -2,7 +2,7 @@
 
 ## 요약
 
-함수의 인자로 넘기는 두 개 이상의 객체를 합쳐서 통째로 넘긴다.
+객체에서 받아오는 함수의 인자가 두 개 이상의 경우 합쳐서 통째로 넘긴다.
 
 ## 배경
 
@@ -50,6 +50,13 @@ interface Temperature {
 const aRoom: Temperature = {
   daysTempRange: {
     low: 20,
+    high: 22,
+  },
+};
+
+const bRoom: Temperature = {
+  daysTempRange: {
+    low: 20,
     high: 27,
   },
 };
@@ -68,18 +75,21 @@ class HeatingPlan {
   }
 }
 
-const low = aRoom.daysTempRange.low;
-const high = aRoom.daysTempRange.high;
-const aPlan = new HeatingPlan({ daysTempRange: { low: 19, high: 29 } });
-const bPlan = new HeatingPlan({ daysTempRange: { low: 18, high: 23 } });
+const aLow = aRoom.daysTempRange.low;
+const aHigh = aRoom.daysTempRange.high;
+const bLow = bRoom.daysTempRange.low;
+const bHigh = bRoom.daysTempRange.high;
+const aPlan = new HeatingPlan({ daysTempRange: { low: 19, high: 23 } });
 
 const alerts: string[] = [];
-if (!aPlan.withinRange(low, high))
+if (!aPlan.withinRange(aLow, aHigh))
   alerts.push("방 온도가 지정 범위를 벗어났습니다.");
-if (!bPlan.withinRange(low, high))
+if (!aPlan.withinRange(bLow, bHigh))
   alerts.push("방 온도가 지정 범위를 벗어났습니다.");
 
-const index = () => [console.log(alerts)];
+const index = () => {
+  return alerts;
+};
 
 export default index;
 ```
@@ -95,6 +105,13 @@ interface Temperature {
 }
 
 const aRoom: Temperature = {
+  daysTempRange: {
+    low: 20,
+    high: 22,
+  },
+};
+
+const bRoom: Temperature = {
   daysTempRange: {
     low: 20,
     high: 27,
@@ -115,13 +132,12 @@ class HeatingPlan {
   }
 }
 
-const aPlan = new HeatingPlan({ daysTempRange: { low: 19, high: 29 } });
-const bPlan = new HeatingPlan({ daysTempRange: { low: 18, high: 23 } });
+const aPlan = new HeatingPlan({ daysTempRange: { low: 19, high: 23 } });
 
 const alerts: string[] = [];
 if (!aPlan.withinRange(aRoom.daysTempRange))
   alerts.push("방 온도가 지정 범위를 벗어났습니다.");
-if (!bPlan.withinRange(aRoom.daysTempRange))
+if (!aPlan.withinRange(bRoom.daysTempRange))
   alerts.push("방 온도가 지정 범위를 벗어났습니다.");
 
 const index = () => {
