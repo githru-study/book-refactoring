@@ -60,8 +60,7 @@ function calcAscent() {
 (2)
 
 ```tsx
-let totalAscent = 0;
-totalAscent = calcAscent();
+const totalAscent = calcAscent();
 
 function calcAscent() {
   let result = 0;
@@ -70,5 +69,69 @@ function calcAscent() {
     result += (verticalChange > 0) ? verticalChange : 0;
   }
   return result;
+}
+```
+
+---
+### 2.
+
+(0)
+
+```tsx
+let prevScrollHeight = 0; // 현재 스크롤 위치(yOffset)보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
+
+const sceneInfo = [
+   {
+      type: 'sticky',
+      heightNum: 5, // 브라우저 높이의 5배로 scrollHeight 세팅
+      scrollHeight: 0,
+   },
+   {
+      type: 'sticky',
+      heightNum: 5,
+      scrollHeight: 0,
+   },
+    // ...
+]
+
+function scrollLoop() {
+   enterNewScene = false;
+   prevScrollHeight = 0;
+   
+   for (let i = 0; i < currentScene; i++) {
+      prevScrollHeight += sceneInfo[i].scrollHeight;
+   }
+
+	// ...
+}
+
+function playAnimation() {
+   const objs = sceneInfo[currentScene].objs;
+   const values = sceneInfo[currentScene].values;
+   const currentYOffset = yOffset - prevScrollHeight;
+    // ...
+}
+```
+
+(1)
+
+```tsx
+function calcPrevScrollHeight(sceneNumber: number) {		       
+   let prevScrollHeight = 0;
+   
+   for (let i = 0; i < currentScene; i++) {
+      prevScrollHeight += sceneInfo[i].scrollHeight;
+   }
+   
+   return prevScrollHeight;
+}
+
+function playAnimation() {
+   const objs = sceneInfo[currentScene].objs;
+   const values = sceneInfo[currentScene].values;
+   
+   const prevScrollHeight = calcPrevScrollHeight(currentScene);
+   const currentYOffset = yOffset - prevScrollHeight;
+    // ...
 }
 ```
