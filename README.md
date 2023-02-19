@@ -97,4 +97,5 @@
 | [5) 매개변수를 질의 함수로 바꾸기](<./ch11)%20refactoring-apis/05)%20replace-parameter-with-query.md>)  | 안바울 |
 | [6) 질의함수를 매개변수로 바꾸기](<./ch11)%20refactoring-apis/06)%20replace-query-with-parameter.md>)   | 김민정 |
 | [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                         | 조예진 |
+| [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)         | 안바울 |
 | [10) 명령을 함수로 바꾸기](./ch11\)%20refactoring-apis/10\)%20replace-command-with-function.md)               | 김민정 |
