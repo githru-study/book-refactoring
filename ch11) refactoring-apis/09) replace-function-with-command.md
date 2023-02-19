@@ -35,11 +35,18 @@ interface ScoringGuide {
 // 선언부
 function score(candidate: Candidate, medicalExam: MedicalExam, scoringGuide: ScoringGuide) {
     // ...
+
+    if ( scoringGuide.stateWithLowCertification(candidate.originState) ){
+        // LowCertification이면, ~~~~ 해라~~
+    }
 }
 
 // 실행부
 const scoringGuide: ScoringGuide = { /* ... */ }
-score({ originState:1 }, { isSmoker: false }, scoringGuide)
+const candidate = { originState:1 }
+const medicalExam = { isSmoker: false }
+
+const scoreResult = score(candidate, medicalExam, scoringGuide)
 ```
 
 ↓↓↓
@@ -53,21 +60,25 @@ interface ScoringGuide {
 
 // 선언부
 interface Command {
-    execute(): void
+    public execute(): void
 }
 class Scorer implements Command {
     constructor(candidate: Candidate, medicalExam: MedicalExam, scoringGuide: ScoringGuide) {
-        // ...
+        // 함수 파라미터
     }
 
     public execute(): void {
+        // 함수가 하는일
         // ...
     }
 }
 
 // 실행부
 const scoringGuide: ScoringGuide = { /* ... */ }
-const scorer = new Scorer({ originState:1 }, { isSmoker: false }, scoringGuide)
+const candidate = { originState:1 }
+const medicalExam = { isSmoker: false }
+
+const scorer = new Scorer(candidate, medicalExam, scoringGuide)
 scorer.execute()
 ```
 
@@ -86,13 +97,30 @@ class CommandExecutor {
     }
 }
 
-const scores: Score[] = [ score1, score2, score3, ... ]
+const scores: Score[] = [ new Score(...candidate1), new Score(...candidate2), new Score(...candidate3), ... ]
 CommandExecutor.executeAll([
     ...scores,  // 대상자 요율점수 계산하고
     refund,     // 반환할꺼 반환하고
     surcharge,  // 추징할꺼 추징하고
 ])
 ```
+
+
+## 예시3
+
+```typescript
+class Action {
+  public commit() {}
+  public rollback() {}
+}
+
+class DrawAction extends Action {}
+class ImageAction extends Action {}
+class TextAction extends Action {}
+
+const actionQueue: Action[] = [ commit1, commit2, /* rollback */ commit4 ]
+```
+
 
 ---
 [목차](../README.md)
