@@ -1,4 +1,4 @@
-# 11.8 생성자를 팩터리 함수로 바꾸기 - Replace Contructor with Factory Function
+# 11.8 생성자를 팩터리 함수로 바꾸기 - Replace Constructor with Factory Function
 
 ## 요약
 
@@ -56,14 +56,15 @@ class Employee {
   }
 }
 
-const employeeDocument: IEmployee[] = [
+type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
+
+const employeeDocument: Optional<IEmployee, "typeCode">[] = [
   {
     nameInfo: "Andy",
     typeCode: "S",
   },
   {
     nameInfo: "Ronald",
-    typeCode: "E",
   },
 ];
 
