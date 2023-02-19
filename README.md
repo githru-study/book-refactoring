@@ -99,4 +99,5 @@
 | [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                                     | 조예진 |
 | [8) 생성자를 팩터리 함수로 바꾸기](<./ch11)%20refactoring-apis/08)%20replace-constructor-with-factory-function.md>) | 김채정 |
 | [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)                    | 안바울 |
-| [10) 명령을 함수로 바꾸기](<./ch11\)%20refactoring-apis/10\)%20replace-command-with-function.md>)               | 김민정 |
+| [10) 명령을 함수로 바꾸기](<./ch11)%20refactoring-apis/10)%20replace-command-with-function.md>)               | 김민정 |
+
