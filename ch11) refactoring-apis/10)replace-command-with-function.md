@@ -72,8 +72,8 @@ monthCharge = charge(customer, usage, provider);
     }// 이 부분을 charge로 옮긴다 -> 옮기고 나서 지운다
 
     charge(customer,usage,provider){
-       const baseCharge = this._customer.baseRate*this._usage;
-       return baseCharge + this._provider.connectionCharge;
+       const baseCharge = this.customer.baseRate*this.usage;
+       return baseCharge + this.provider.connectionCharge;
     }
 
 function charge(customer,usage,provider){
