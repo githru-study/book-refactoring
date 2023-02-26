@@ -3,7 +3,7 @@
 
 ## 배경 & 대상 & 방식
 
-예외는 예외적으로 동적할때만 쓰여야 함.  
+예외는 예외적으로 동작할때만 쓰여야 함.  
 함수 수행시 문제가 될 수 있는 조건을 함수 호출 전에 검사할 수 있다면, 예외를 던지는 대신 호출하는 곳에서 조건을 검사하는게 좋음  
 (cf. 10-3 중첩조건문을 보호구문으로 바꾸기)  
 
@@ -83,13 +83,13 @@ class ResourcePool {
         if (this.available.isEmpty()) {
             result = Resource.create()        // pool에 없으면 새로 생성해서 반환
             this.allocated.add(result)
-        }
-
-        try {
-            result = this.available.pop()     // pool에 있으면 있는거 반환
-            this.allocated.add(result)
-        } catch(e: NoSuchElementException) {
-            throw new AssertionError("도달 불가")
+        } else {
+            try {
+                result = this.available.pop()     // pool에 있으면 있는거 반환
+                this.allocated.add(result)
+            } catch(e: NoSuchElementException) {
+                throw new AssertionError("도달 불가")
+            }
         }
 
         return result
