@@ -19,12 +19,12 @@
 
 ```js
 //annualCost(),totalAnualCost() 모두 중복되는 메서드를 가지고 있다.
-class Employee {
+class Employee extends Party {
   get annualCost() {
     return this.monthlyCost * 12;
   }
 }
-class Department {
+class Department extends Party {
   get totalAnnualCost() {
     return this.monthlyCost * 12;
   }
@@ -35,13 +35,13 @@ class Department {
 
 ```js
 // -> 메서드이름을 같게 한다
-class Department {
+class Department extends Party{
   get annualCost() {
     return this.monthlyCost * 12;
   }
 }
 
-// 하나의 메서드를 슈퍼클래스로 올기고, 나머지 서브 클래스는 지운다.
+// 하나의 메서드를 슈퍼클래스로 올기고, 나머지 서브 클래스 메서드는 지운다.
 Class Party(){
     return this.monthlyCost * 12;
 }
@@ -51,6 +51,14 @@ Class Party(){
 
 ```js
 Class Party(){
+    get annualCost(){
     return this.monthlyCost * 12;
+}
+}
+class Employee extends Party {
+//....
+}
+class Department extends Party {
+//.....
 }
 ```

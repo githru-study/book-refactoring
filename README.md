@@ -106,5 +106,5 @@
 
 | 기법명                                                                                       |  담당  |
 | :------------------------------------------------------------------------------------------- | :----: |
-| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)01)pull-up-method.md>)             | 김민정 |
+| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                | 김민정 |
 | [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>) | 김민정 |
