@@ -50,7 +50,7 @@ Class Party(){
 ## 리팩토링 최종 코드
 
 ```js
-Class Party(){
+Class Party{
     get annualCost(){
     return this.monthlyCost * 12;
 }
