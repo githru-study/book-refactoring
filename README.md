@@ -109,3 +109,4 @@
 | :------------------------------------------------------------------------------------------- | :----: |
 | [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                | 김민정 |
 | [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>) | 김민정 |
+| [4) 메서드 내리기](<./ch12)%20dealing-with-inheritance/04)%20push-down-method.md>)           | 안바울 |
