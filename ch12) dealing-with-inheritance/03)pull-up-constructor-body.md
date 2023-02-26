@@ -116,7 +116,7 @@ class Department extends Party {
 
 ```js
 
-Class Employee(){
+Class Employee{
     constructor(name){...}
     get isPrivileged(){...}
     assignCar(){...}
@@ -154,7 +154,7 @@ finishConstruction(){
 }
 
 //추출한 함수를 슈퍼클래스로 옮긴다 (employee)
-Class Employee(){
+Class Employee{
     finishConstruction(){
     if (this.isPrivileged) this.assignedCar();
     }
@@ -165,7 +165,7 @@ Class Employee(){
 ## 리팩토링 최종 코드
 
 ```js
-Class Employee(){
+Class Employee{
     //...constructor,assignedCar
     finishConstruction(){
     if (this.isPrivileged) this.assignedCar();
