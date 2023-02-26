@@ -26,6 +26,57 @@
 
 ## 예시
 
+### as-is
+
+```cs
+public class abstract GameManager {
+    public abstract void InitGame();
+    public abstract void OnGameStart();
+    public abstract void OnGameStop();
+    public abstract void CheckGameClear();
+    public abstract void CheckGameOver();
+    public abstract void GameClear();
+    public abstract void ChangeProgress();
+    public abstract void GoNextStage();
+}
+
+public class AvoidStageGameManager: GameManager {
+    public Button btnNextStage;
+    private float timeLimit = 0;
+    private int avoidObjectId;
+
+    // 메소드 구현 ...
+}
+
+public class CleanStageManager : GameManager {
+    public Button btnNextStage;
+    private float timeLimit = 0;
+    private int goalCount;
+
+    // 메소드 구현 ...
+}
+```
+
+### to-be
+
+```cs
+public class StageGameManager: GameManager {
+    public Button btnNextStage;
+    private float timeLimit = 0;
+}
+
+public class AvoidStageGameManager: StageGameManager {
+    private int avoidObjectId;
+
+    // 메소드 구현 ...
+}
+
+public class CleanStageManager : StageGameManager {
+    private int goalCount;
+    
+    // 메소드 구현 ...
+}
+```
 
 ---
 [목차](../README.md)
