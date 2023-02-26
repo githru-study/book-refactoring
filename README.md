@@ -101,6 +101,7 @@
 | [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)                    | 안바울 |
 | [10) 명령을 함수로 바꾸기](<./ch11)%20refactoring-apis/10)replace-command-with-function.md>)                        | 김민정 |
 | [11) 수정된 값 반환하기](<./ch11)%20refactoring-apis/11)%20return-modified-value.md>)                               | 조예진 |
+| [13) 수정된 값 반환하기](<./ch11)%20refactoring-apis/13)%20replace-exception-with-precheck.md>)                     | 안바울 |
 
 ### CHAPTER 12. 상속 다루기
 
