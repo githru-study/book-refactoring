@@ -42,7 +42,7 @@ class Department extends Party{
 }
 
 // 하나의 메서드를 슈퍼클래스로 올기고, 나머지 서브 클래스 메서드는 지운다.
-Class Party(){
+Class Party{
     return this.monthlyCost * 12;
 }
 ```
