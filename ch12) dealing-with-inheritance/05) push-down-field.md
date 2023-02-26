@@ -12,6 +12,54 @@
 
 ## 예시
 
+### as-is
+
+```csharp
+
+public class StageGameManager: GameManager {
+    public Button btnNextStage;
+    private float timeLimit = 0;
+}
+
+public class AvoidStageGameManager: StageGameManager {
+    private int avoidObjectId;
+
+    // 메소드 구현 ...
+}
+
+public class CleanStageManager : StageGameManager {
+    private int goalCount;
+    private bool useTimeLimit = false;
+    
+    // 메소드 구현 ...
+}
+
+```
+
+### to-be
+```csharp
+
+public class StageGameManager: GameManager {
+    public Button btnNextStage;
+}
+
+public class TimeLimitStageGameManager: StageGameManager {
+    private float timeLimit = 0;
+}
+
+public class AvoidStageGameManager: TimeLimitStageGameManager {
+    private int avoidObjectId;
+
+    // 메소드 구현 ...
+}
+
+public class CleanStageManager : StageGameManager {
+    private int goalCount;
+    
+    // 메소드 구현 ...
+}
+
+```
 
 ---
 [목차](../README.md)
