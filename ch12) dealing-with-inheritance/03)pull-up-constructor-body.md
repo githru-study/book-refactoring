@@ -62,7 +62,7 @@ class Employee extends Party {
 }
 
 //->>//this._name = name; 이 부분을 빼서 슈퍼클래스인 파티 클래스로 옮겨준다.
-Class Party(){
+class Party{
     constructor(name){
         this._name = name;
     }
@@ -88,7 +88,7 @@ class Department extends Party {
 ## 리팩토링 최종 코드
 
 ```js
-Class Party(){
+Class Party{
     constructor(name){
         this._name = name;
     }
