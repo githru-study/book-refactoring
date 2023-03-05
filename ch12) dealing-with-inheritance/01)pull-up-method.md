@@ -13,6 +13,12 @@
 2. 메서드의 이름과 파라미터가 다르다면, 메서드의 이름을 통일한다.
 3. 서브 클래스중 하나의 메서드를 복사해서 슈퍼클래스로 옮기고 나머지 서브클래스들은 전부 지운다.
 
+## ※템플릿 메서드
+
+출처 -> https://refactoring.com/catalog/formTemplateMethod.html, https://refactoring.guru/ko/design-patterns/template-method
+
+- 클래스들이 전체 흐름이 비슷하지만, 세부적인 코드 부분이 다를 때 사용한다.
+
 # 예시
 
 ## 리팩토링 전 코드
@@ -50,15 +56,29 @@ Class Party{
 ## 리팩토링 최종 코드
 
 ```js
-Class Party{
-    get annualCost(){
+class Party {
+  get annualCost() {
     return this.monthlyCost * 12;
-}
+  }
 }
 class Employee extends Party {
-//....
+  //....
 }
 class Department extends Party {
-//.....
+  //.....
+}
+```
+
+※ 서브클래스 책임오류
+서브클래스에서 부모클래스의 메소드가 필요하지 않은 경우일 때, 구현되지 않았다고 표시를 해줘야하는 경우를 말한다.
+
+```js
+class Party {
+  get monthlyCost() {
+    throw new sunClassResponsibilityError();
+  }
+  get annualCost() {
+    return this.monthlyCost * 12;
+  }
 }
 ```

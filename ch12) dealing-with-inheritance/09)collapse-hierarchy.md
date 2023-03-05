@@ -18,22 +18,60 @@
 ```js
 class Employee {
   //...
+  get monthlyCost() {
+    return this._monthlyCost;
+  }
+  get additionalCost() {
+    return daycost * 0.48;
+  }
+  get annualCost() {
+    return this.monthlyCost * 12 - additionalCost;
+  }
 }
 class Salesperson extends Employee {
-  //....
+  //...
+  get totalmonthlyCost() {
+    return this._monthlyCost;
+  }
+  get additionalfee() {
+    return daycost * 0.48;
+  }
+  get annualCost() {
+    return this.monthlyCost * 12 - additionalfee;
+  }
 }
 ```
 
 ## 리팩토링 과정 코드
 
 ```js
-class Employee {
+//monthlyCost(), additionalCost()로 이름을 통일하고, 위에서 겹치는 부분들은 없애고, 하나로 통합한다.
+class Salesperson extends Employee {
   //...
+  get totalmonthlyCost() {
+    return this._monthlyCost;
+  }
+  get additionalfee() {
+    return daycost * 0.48;
+  }
+  get annualCost() {
+    return this.monthlyCost * 12 - additionalfee;
+  }
 }
 ```
 
 ## 리팩토링 최종 코드
 
 ```js
-
+class Employee {
+  get monthlyCost() {
+    return this._monthlyCost;
+  }
+  get additionalCost() {
+    return daycost * 0.48;
+  }
+  get annualCost() {
+    return this.monthlyCost * 12 - additionalCost;
+  }
+}
 ```

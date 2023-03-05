@@ -50,11 +50,10 @@ class Department extends Party {
 ## 리팩토링 과정 코드
 
 ```js
-
 class Employee extends Party {
   constructor(name, id, monthlyCost) {
     super();
-    this._name = name;// super 바로 아래로 name을 옮겨준다.
+    this._name = name; // super 바로 아래로 name을 옮겨준다.
     this._id = id;
     this._monthlyCost = monthlyCost;
   }
@@ -62,10 +61,10 @@ class Employee extends Party {
 }
 
 //->>//this._name = name; 이 부분을 빼서 슈퍼클래스인 파티 클래스로 옮겨준다.
-class Party{
-    constructor(name){
-        this._name = name;
-    }
+class Party {
+  constructor(name) {
+    this._name = name;
+  }
 }
 
 class Employee extends Party {
@@ -88,10 +87,10 @@ class Department extends Party {
 ## 리팩토링 최종 코드
 
 ```js
-Class Party{
-    constructor(name){
-        this._name = name;
-    }
+class Party {
+  constructor(name) {
+    this._name = name;
+  }
 }
 
 class Employee extends Party {
@@ -109,20 +108,19 @@ class Department extends Party {
     this._staff = staff;
   }
 }
-
 ```
 
 ## 리팩토링 전 코드- 2번 예제
 
 ```js
 
-Class Employee{
+class Employee{
     constructor(name){...}
     get isPrivileged(){...}
     assignCar(){...}
 }
 
-Class Manager extends Employee{
+class Manager extends Employee{
     constructor(name,grade){
         super(name);
         this._grade = grade;
@@ -140,7 +138,7 @@ Class Manager extends Employee{
 ## 리팩토링 과정 코드
 
 ```js
-Class Manager extends Employee{
+class Manager extends Employee{
     constructor(name,grade){
         super(name);
         this._grade = grade;
@@ -154,7 +152,7 @@ finishConstruction(){
 }
 
 //추출한 함수를 슈퍼클래스로 옮긴다 (employee)
-Class Employee{
+class Employee{
     finishConstruction(){
     if (this.isPrivileged) this.assignedCar();
     }
@@ -165,22 +163,22 @@ Class Employee{
 ## 리팩토링 최종 코드
 
 ```js
-Class Employee{
-    //...constructor,assignedCar
-    finishConstruction(){
+class Employee {
+  //...constructor,assignedCar
+  finishConstruction() {
     if (this.isPrivileged) this.assignedCar();
-    }
+  }
 }
 
-Class Manager extends Employee{
-    constructor(name,grade){
-        super(name);
-        this._grade = grade;
-        this.finishConstruction();
-    }
+class Manager extends Employee {
+  constructor(name, grade) {
+    super(name);
+    this._grade = grade;
+    this.finishConstruction();
+  }
 
-    get isPrivileged(){
-    return this._grade >4;
-}
+  get isPrivileged() {
+    return this._grade > 4;
+  }
 }
 ```
