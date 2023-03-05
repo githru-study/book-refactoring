@@ -1,6 +1,5 @@
 import {Booking} from "./Booking";
 import {Dinner, Extra, Show, TalkBack} from "./helper";
-import {PremiumBooking} from "./PremiumBooking";
 import {createBooking, createPremiumBooking} from "./factory";
 
 describe('예약', () => {
