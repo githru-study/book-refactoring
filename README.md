@@ -114,7 +114,6 @@
 | [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                                  | 안바울 |
 | [6) 타입코드를 서브클래스로 바꾸기](<./ch12)%20dealing-with-inheritance/06)%20replace-type-code-with-subclasses.md>)           | 안바울 |
 | [7) 서브클래스 제거하기](<./ch12)%20dealing-with-inheritance/07)%20remove-subclass.md>)                         | 안바울 |
-| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
 | [8) 슈퍼클래스 추출하기](<./ch12)%20dealing-with-inheritance/08)extract-superclass.md>)                          | 김민정 |
 | [9) 계층 합치기](<./ch12)%20dealing-with-inheritance/09)collapse-hierarchy.md>)                                  | 김민정 |
 | [10) 서브클래스를 위임으로 바꾸기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
