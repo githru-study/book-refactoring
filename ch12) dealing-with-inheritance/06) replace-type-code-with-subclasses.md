@@ -117,7 +117,7 @@ class Employee {
     constructor(name:string, type:string) {
         this.validateType(type);
         this.name = name;
-        this.type = name;
+        this.type = type;
     }
 
     private validateType(type: string) {
@@ -140,14 +140,18 @@ class EmployeeType {                        // 타입코드를 클래스로 분�
     constructor(private type: string) {}
     get type() { return this.type; }
 }
-class SalespersonType extends EmployeeType {}
-class EngineerType extends EmployeeType {}
+class SalespersonType extends EmployeeType {
+    constructor() { super('salesperson'); }
+}
+class EngineerType extends EmployeeType {
+    constructor() { super('engineer'); }
+}
 
 class EmployeeTypeFactory {
     static create(type) {
         switch (type) {
-            case 'salesperson' : return new SalespersonType(type);   // 타입코드 유효성검사 책임을 팩토리함수로 이동
-            case 'engineer' : return new Engineertype(type);
+            case 'salesperson' : return new SalespersonType();   // 타입코드 유효성검사 책임을 팩토리함수로 이동
+            case 'engineer' : return new EngineerType();
             default: throw new Error('invalid type');
         }
     }
