@@ -1,7 +1,7 @@
 import {Extra, Show} from "./helper";
 import {Booking} from "./Booking";
 
-class PremiumBooking extends Booking {
+export class PremiumBooking extends Booking {
     constructor(protected show: Show, protected date: Date, private extra: Extra) {
         super(show, date);
     }
