@@ -28,8 +28,6 @@ export class Bird {
     }
 
     get plumage() {
-        // get 키워드를 사용하지 않고, getPlumage가 함수였다면?
-        // => 유럽, 아프리카새는 getPlumage가 없기 때문에 오류 발생함.
         return this.speciesDelegate?.getPlumage() || this._plumage || '보통';
     }
 
