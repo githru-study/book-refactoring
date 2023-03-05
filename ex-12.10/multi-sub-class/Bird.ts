@@ -1,3 +1,5 @@
+import {EuropeanSwallowDelegate} from "./EuropeanSwallowDelegate";
+
 export type BirdData = {
     type: '새' | '유럽' | '아프리카' | '노르웨이';
     name: string;
@@ -14,16 +16,27 @@ export type NorwegianBlueParrotData = BirdData & {
 export class Bird {
     public readonly name: string;
     public readonly _plumage: string;
-    constructor({name, plumage}: BirdData) {
-        this.name = name;
-        this._plumage = plumage;
+    private speciesDelegate: any;
+
+    constructor(data: BirdData) {
+        this.name = data.name;
+        this._plumage = data.plumage;
+        this.speciesDelegate = this.selectSpeciesDelegate(data)
+    }
+
+    private selectSpeciesDelegate(data: BirdData) {
+        switch (data.type) {
+            case '유럽':
+                return new EuropeanSwallowDelegate();
+            default: return null;
+        }
     }
 
     get plumage() {
         return this._plumage || '보통';
     }
 
-    get airSpeedVelocity() { return null; }
+    get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity || null; }
 }
 
 export class EuropeanSwallow extends Bird {
