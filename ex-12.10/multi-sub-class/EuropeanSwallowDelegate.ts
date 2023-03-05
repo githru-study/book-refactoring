@@ -1,5 +1,4 @@
-import {BirdDelegate} from "./BirdDelegate";
 
-export class EuropeanSwallowDelegate extends BirdDelegate{
+export class EuropeanSwallowDelegate {
     get airSpeedVelocity() { return 3; }
 }

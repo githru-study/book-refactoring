@@ -1,13 +1,13 @@
 import {EuropeanSwallowDelegate} from "./EuropeanSwallowDelegate";
 import {AfricanSwallowDelegate} from "./AfricanSwallowDelegate";
-import {BirdDelegate} from "./BirdDelegate";
 import {NorwegianBlueParrotDelegate} from "./NorwegianBlueParrotDelegate";
 import {AfricanSwallowData, BirdData, NorwegianBlueParrotData} from "./Type";
 
 export class Bird {
     public readonly name: string;
     public readonly _plumage: string;
-    private speciesDelegate: BirdDelegate;
+    // 만약 이걸 any로 처리했다면?
+    private speciesDelegate: any;
 
     constructor(data: BirdData) {
         this.name = data.name;
@@ -28,7 +28,9 @@ export class Bird {
     }
 
     get plumage() {
-        return this.speciesDelegate?.plumage || this._plumage || '보통';
+        // get 키워드를 사용하지 않고, getPlumage가 함수였다면?
+        // => 유럽, 아프리카새는 getPlumage가 없기 때문에 오류 발생함.
+        return this.speciesDelegate?.getPlumage() || this._plumage || '보통';
     }
 
     get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity ?? null; }

@@ -1,11 +1,9 @@
-import {BirdDelegate} from "./BirdDelegate";
 import {AfricanSwallowData} from "./Type";
 
-export class AfricanSwallowDelegate extends BirdDelegate{
+export class AfricanSwallowDelegate {
     private readonly numberOfCoconuts: number;
 
     constructor({numberOfCoconuts}: AfricanSwallowData) {
-        super();
         this.numberOfCoconuts = numberOfCoconuts;
     }
 
