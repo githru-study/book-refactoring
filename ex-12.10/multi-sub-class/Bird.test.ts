@@ -1,5 +1,4 @@
 import {
-    AfricanSwallow,
     AfricanSwallowData,
     Bird,
     BirdData,
@@ -45,7 +44,7 @@ describe('새 테스트', () => {
 
         const bird = createBird(data);
 
-        expect(bird).toBeInstanceOf(AfricanSwallow);
+        expect(bird).toBeInstanceOf(Bird);
         expect(bird.plumage).toBe('a')
         expect(bird.airSpeedVelocity).toBe(34);
     })

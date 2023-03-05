@@ -1,4 +1,5 @@
 import {EuropeanSwallowDelegate} from "./EuropeanSwallowDelegate";
+import {AfricanSwallowDelegate} from "./AfricanSwallowDelegate";
 
 export type BirdData = {
     type: '새' | '유럽' | '아프리카' | '노르웨이';
@@ -28,6 +29,8 @@ export class Bird {
         switch (data.type) {
             case '유럽':
                 return new EuropeanSwallowDelegate();
+            case '아프리카':
+                return new AfricanSwallowDelegate(data as AfricanSwallowData);
             default: return null;
         }
     }
@@ -37,19 +40,6 @@ export class Bird {
     }
 
     get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity || null; }
-}
-
-export class AfricanSwallow extends Bird {
-    public readonly numberOfCoconuts: number;
-
-    constructor(data: AfricanSwallowData) {
-        super(data);
-        this.numberOfCoconuts = data.numberOfCoconuts;
-    }
-
-    get airSpeedVelocity() {
-        return 40 - 2 * this.numberOfCoconuts;
-    }
 }
 
 export class NorwegianBlueParrot extends Bird {
