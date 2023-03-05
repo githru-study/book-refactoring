@@ -3,14 +3,12 @@ import {Booking} from "./Booking";
 import {PremiumBookingDelegate} from "./PremiumBookingDelegate";
 
 export class PremiumBooking extends Booking {
-    private premiumDelegate: PremiumBookingDelegate;
-    
     constructor(protected show: Show, protected date: Date, private extra: Extra) {
         super(show, date);
     }
 
     public override get hasTalkBack() {
-        return !!this.show.talkback;
+        return this.premiumDelegate.hasTalkBack;
     }
 
     public override get basePrice() {
