@@ -126,6 +126,14 @@ class Employee {
         }
     }
 
+    get capitalizedType() {
+        return this.type.charAt(0).toUpperCase() + this.type.slice(1).toLowerCase();
+    }
+
+    toString() {
+        return `${this.name} (${this.capitalizedType})`;
+    }
+    
     // ...
 }
 
@@ -138,7 +146,12 @@ class ParttimeEmployee extends Employee {}  // Employee의 서브클래스가 �
 ```typescript
 class EmployeeType {                        // 타입코드를 클래스로 분리
     constructor(private type: string) {}
+
     get type() { return this.type; }
+    
+    get capitalizedType() {
+        return this.type.charAt(0).toUpperCase() + this.type.slice(1).toLowerCase();
+    }
 }
 class SalespersonType extends EmployeeType {
     constructor() { super('salesperson'); }
@@ -164,6 +177,10 @@ class Employee {
     constructor(name:string, type: EmployeeType) {
         this.name = name;
         this.type = EmployeeTypeFactory.create(type);  // 타입코드에 대한 관심사 제거
+    }
+    
+    toString() {
+        return `${this.name} (${this.type.capitalizedType})`;  // capitalizedType 을 타입코드 클래스를 통해서 생성
     }
 
     // ...
