@@ -7,11 +7,6 @@ export class PremiumBooking extends Booking {
         super(show, date);
     }
 
-    public get hasDinner() {
-        return !!this.extra.dinner && !this.isPeakDay;
-    }
 
-    public bePremium(extra: Extra) {
-        this.premiumDelegate = new PremiumBookingDelegate(this, extra);
-    }
 }
+

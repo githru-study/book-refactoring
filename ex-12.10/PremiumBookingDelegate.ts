@@ -12,4 +12,8 @@ export class PremiumBookingDelegate {
     public getExtendedBasePrice(base: number) {
         return Math.round(base + this.extra.premiumFee);
     }
+
+    public get hasDinner() {
+        return !!this.extra.dinner && !this.hostBooking.isPeakDay;
+    }
 }

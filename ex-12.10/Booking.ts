@@ -1,4 +1,4 @@
-import {Show} from "./helper";
+import {Extra, Show} from "./helper";
 import {PremiumBookingDelegate} from "./PremiumBookingDelegate";
 
 export const EXTRA_COAST = 1.15;
@@ -22,6 +22,14 @@ export class Booking {
     public get basePrice() {
         const base = this.isPeakDay ? Math.round(this.show.price * EXTRA_COAST) : this.show.price;
         return this.premiumDelegate?.getExtendedBasePrice(base) || base;
+    }
+
+    public get hasDinner() {
+        return this.premiumDelegate?.hasDinner || false;
+    }
+
+    public bePremium(extra: Extra) {
+        this.premiumDelegate = new PremiumBookingDelegate(this, extra);
     }
 }
 
