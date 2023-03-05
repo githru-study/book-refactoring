@@ -12,7 +12,7 @@ export class PremiumBooking extends Booking {
     }
 
     public override get basePrice() {
-        return Math.round(super.basePrice + this.extra.premiumFee);
+        return this.premiumDelegate.basePrice;
     }
 
     public get hasDinner() {

@@ -20,6 +20,11 @@ export class Booking {
     }
 
     public get basePrice() {
+        return this.premiumDelegate?.basePrice || this.getPrivateBasePrice();
+    }
+
+    // 위임 클래스가 사용하기 위해 public으로 열어줘야 함.. 그런데 다른 클라이언트들은 이 메서드를 쓰면 안됨
+    public getPrivateBasePrice() {
         return this.isPeakDay ? Math.round(this.show.price * EXTRA_COAST) : this.show.price;
     }
 }
