@@ -1,5 +1,7 @@
 import {EuropeanSwallowDelegate} from "./EuropeanSwallowDelegate";
 import {AfricanSwallowDelegate} from "./AfricanSwallowDelegate";
+import {BirdDelegate} from "./BirdDelegate";
+import {NorwegianBlueParrotDelegate} from "./NorwegianBlueParrotDelegate";
 
 export type BirdData = {
     type: '새' | '유럽' | '아프리카' | '노르웨이';
@@ -17,7 +19,7 @@ export type NorwegianBlueParrotData = BirdData & {
 export class Bird {
     public readonly name: string;
     public readonly _plumage: string;
-    private speciesDelegate: any;
+    private speciesDelegate: BirdDelegate;
 
     constructor(data: BirdData) {
         this.name = data.name;
@@ -31,33 +33,15 @@ export class Bird {
                 return new EuropeanSwallowDelegate();
             case '아프리카':
                 return new AfricanSwallowDelegate(data as AfricanSwallowData);
+            case '노르웨이':
+                return new NorwegianBlueParrotDelegate(data as NorwegianBlueParrotData, this);
             default: return null;
         }
     }
 
     get plumage() {
-        return this._plumage || '보통';
+        return this.speciesDelegate?.plumage || this._plumage || '보통';
     }
 
-    get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity || null; }
-}
-
-export class NorwegianBlueParrot extends Bird {
-
-    public readonly voltage: number;
-    public readonly isNailed: boolean;
-
-    constructor(data) {
-        super(data);
-        this.voltage = data.voltage;
-        this.isNailed = data.isNailed;
-    }
-
-    get plumage() {
-        if (this.voltage > 100) return 'd';
-        else return this._plumage || 'e';
-    }
-    get airSpeedVelocity() {
-        return (this.isNailed) ? 0 : 10 + this.voltage / 10;
-    }
+    get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity ?? null; }
 }

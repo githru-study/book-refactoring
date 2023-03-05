@@ -2,7 +2,6 @@ import {
     AfricanSwallowData,
     Bird,
     BirdData,
-    NorwegianBlueParrot,
     NorwegianBlueParrotData
 } from "./Bird";
 import {createBird} from "./factory";
@@ -59,7 +58,7 @@ describe('새 테스트', () => {
 
         const bird = createBird(data);
 
-        expect(bird).toBeInstanceOf(NorwegianBlueParrot);
+        expect(bird).toBeInstanceOf(Bird);
         expect(bird.plumage).toBe('a')
         expect(bird.airSpeedVelocity).toBe(0);
     })
@@ -74,7 +73,7 @@ describe('새 테스트', () => {
 
         const bird = createBird(data);
 
-        expect(bird).toBeInstanceOf(NorwegianBlueParrot);
+        expect(bird).toBeInstanceOf(Bird);
         expect(bird.plumage).toBe('d')
         expect(bird.airSpeedVelocity).toBe(0);
     })
@@ -89,7 +88,7 @@ describe('새 테스트', () => {
 
         const bird = createBird(data);
 
-        expect(bird).toBeInstanceOf(NorwegianBlueParrot);
+        expect(bird).toBeInstanceOf(Bird);
         expect(bird.plumage).toBe('d')
         expect(bird.airSpeedVelocity).toBe(20.3);
     })
