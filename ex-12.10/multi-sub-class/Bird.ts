@@ -39,10 +39,6 @@ export class Bird {
     get airSpeedVelocity() { return this.speciesDelegate?.airSpeedVelocity || null; }
 }
 
-export class EuropeanSwallow extends Bird {
-    get airSpeedVelocity() { return 3; }
-}
-
 export class AfricanSwallow extends Bird {
     public readonly numberOfCoconuts: number;
 

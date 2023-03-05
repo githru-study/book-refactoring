@@ -3,7 +3,6 @@ import {
     AfricanSwallowData,
     Bird,
     BirdData,
-    EuropeanSwallow,
     NorwegianBlueParrot,
     NorwegianBlueParrotData
 } from "./Bird";
@@ -32,7 +31,7 @@ describe('새 테스트', () => {
 
         const bird = createBird(data);
 
-        expect(bird).toBeInstanceOf(EuropeanSwallow);
+        expect(bird).toBeInstanceOf(Bird);
         expect(bird.plumage).toBe('a')
         expect(bird.airSpeedVelocity).toBe(3);
     })
