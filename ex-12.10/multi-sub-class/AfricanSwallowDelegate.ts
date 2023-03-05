@@ -1,5 +1,5 @@
-import {AfricanSwallowData} from "./Bird";
 import {BirdDelegate} from "./BirdDelegate";
+import {AfricanSwallowData} from "./Type";
 
 export class AfricanSwallowDelegate extends BirdDelegate{
     private readonly numberOfCoconuts: number;

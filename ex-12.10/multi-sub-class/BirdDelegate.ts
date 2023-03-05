@@ -1,4 +1,4 @@
-import {BirdData} from "./Bird";
+import {BirdData} from "./Type";
 
 export abstract class BirdDelegate {
     abstract get airSpeedVelocity();

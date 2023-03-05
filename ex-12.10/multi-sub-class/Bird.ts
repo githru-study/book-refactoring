@@ -2,19 +2,7 @@ import {EuropeanSwallowDelegate} from "./EuropeanSwallowDelegate";
 import {AfricanSwallowDelegate} from "./AfricanSwallowDelegate";
 import {BirdDelegate} from "./BirdDelegate";
 import {NorwegianBlueParrotDelegate} from "./NorwegianBlueParrotDelegate";
-
-export type BirdData = {
-    type: '새' | '유럽' | '아프리카' | '노르웨이';
-    name: string;
-    plumage: string;
-}
-export type AfricanSwallowData = BirdData & {
-    numberOfCoconuts: number;
-}
-export type NorwegianBlueParrotData = BirdData & {
-    voltage: number;
-    isNailed: boolean;
-}
+import {AfricanSwallowData, BirdData, NorwegianBlueParrotData} from "./Type";
 
 export class Bird {
     public readonly name: string;

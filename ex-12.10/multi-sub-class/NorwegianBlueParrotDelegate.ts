@@ -1,5 +1,6 @@
 import {BirdDelegate} from "./BirdDelegate";
-import {Bird, NorwegianBlueParrotData} from "./Bird";
+import {Bird} from "./Bird";
+import {NorwegianBlueParrotData} from "./Type";
 
 export class NorwegianBlueParrotDelegate extends BirdDelegate {
     private readonly voltage: number;

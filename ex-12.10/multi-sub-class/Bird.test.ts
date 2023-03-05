@@ -1,10 +1,8 @@
 import {
-    AfricanSwallowData,
-    Bird,
-    BirdData,
-    NorwegianBlueParrotData
+    Bird
 } from "./Bird";
 import {createBird} from "./factory";
+import {AfricanSwallowData, BirdData, NorwegianBlueParrotData} from "./Type";
 
 describe('새 테스트', () => {
     test('일반 새', () => {
