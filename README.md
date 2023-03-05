@@ -105,16 +105,16 @@
 
 ### CHAPTER 12. 상속 다루기
 
-| 기법명                                                                                         | 담당  |
-|:--------------------------------------------------------------------------------------------|:---:|
-| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                     | 김민정 |
-| [2) 필드 올리기](<./ch12)%20dealing-with-inheritance/02)%20pull-up-field.md>)                    | 조예진 |
-| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)        | 김민정 |
-| [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                     | 조예진 |
-| [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                  | 안바울 |
-| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
-| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
-| [8) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
-| [9) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
-| [10) 메서드 내리기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
-| [11) ](<./ch12)%20dealing-with-inheritance/>)                 |  .  |
+| 기법명                                                                                                 | 담당  |
+|:----------------------------------------------------------------------------------------------------|:---:|
+| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                             | 김민정 |
+| [2) 필드 올리기](<./ch12)%20dealing-with-inheritance/02)%20pull-up-field.md>)                            | 조예진 |
+| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)                | 김민정 |
+| [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                             | 조예진 |
+| [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                          | 안바울 |
+| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
+| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
+| [8) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
+| [9) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
+| [10) 서브클래스를 위임으로 바꾸기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
+| [11) ](<./ch12)%20dealing-with-inheritance/>)                                                       |  .  |
