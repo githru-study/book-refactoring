@@ -9,7 +9,7 @@ export class PremiumBookingDelegate {
         return !!this.hostBooking.getShow().talkback;
     }
 
-    public get basePrice() {
-        return Math.round(this.hostBooking.getPrivateBasePrice() + this.extra.premiumFee);
+    public getExtendedBasePrice(base: number) {
+        return Math.round(base + this.extra.premiumFee);
     }
 }

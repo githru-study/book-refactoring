@@ -7,14 +7,6 @@ export class PremiumBooking extends Booking {
         super(show, date);
     }
 
-    public override get hasTalkBack() {
-        return this.premiumDelegate.hasTalkBack;
-    }
-
-    public override get basePrice() {
-        return this.premiumDelegate.basePrice;
-    }
-
     public get hasDinner() {
         return !!this.extra.dinner && !this.isPeakDay;
     }
