@@ -1,6 +1,7 @@
 import {Booking} from "./Booking";
 import {Dinner, Extra, Show, TalkBack} from "./helper";
 import {PremiumBooking} from "./PremiumBooking";
+import {createBooking, createPremiumBooking} from "./factory";
 
 describe('예약', () => {
     let show: Show;
@@ -23,7 +24,11 @@ describe('예약', () => {
         let booking: Booking;
 
         beforeEach(() => {
-            booking = new Booking(show, date);
+            booking = createBooking(show, date);
+        })
+
+        test('인스턴스 확인', () => {
+            expect(booking).toBeInstanceOf(Booking);
         })
 
         test('피크데이', () =>{
@@ -45,7 +50,11 @@ describe('예약', () => {
         let premiumBooking: PremiumBooking;
 
         beforeEach(() => {
-            premiumBooking = new PremiumBooking(show, date, extra);
+            premiumBooking = createPremiumBooking(show, date, extra);
+        })
+
+        test('인스턴스 확인', () => {
+            expect(premiumBooking).toBeInstanceOf(PremiumBooking);
         })
 
         test('피크데이', () =>{
