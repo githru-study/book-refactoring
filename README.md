@@ -112,7 +112,7 @@
 | [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)                     | 김민정 |
 | [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                                    | 조예진 |
 | [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                                  | 안바울 |
-| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
+| [6) 타입코드를 서브클래스로 바꾸기](<./ch12)%20dealing-with-inheritance/06)%20replace-type-code-with-subclasses.md>)           | 안바울 |
 | [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
 | [8) 슈퍼클래스 추출하기](<./ch12)%20dealing-with-inheritance/08)extract-superclass.md>)                          | 김민정 |
 | [9) 계층 합치기](<./ch12)%20dealing-with-inheritance/09)collapse-hierarchy.md>)                                  | 김민정 |
