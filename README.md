@@ -112,4 +112,9 @@
 | [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)        | 김민정 |
 | [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                     | 조예진 |
 | [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                  | 안바울 |
+| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
+| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
+| [8) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
+| [9) ](<./ch12)%20dealing-with-inheritance/.md>)                                             |  .  |
 | [10) 메서드 내리기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
+| [11) ](<./ch12)%20dealing-with-inheritance/>)                 |  .  |
