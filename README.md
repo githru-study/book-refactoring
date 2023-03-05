@@ -101,12 +101,20 @@
 | [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)                    | 안바울 |
 | [10) 명령을 함수로 바꾸기](<./ch11)%20refactoring-apis/10)replace-command-with-function.md>)                        | 김민정 |
 | [11) 수정된 값 반환하기](<./ch11)%20refactoring-apis/11)%20return-modified-value.md>)                               | 조예진 |
-| [13) 예외를 사전확인으로 바꾸기](<./ch11)%20refactoring-apis/13)%20replace-exception-with-precheck.md>)                     | 안바울 |
+| [13) 예외를 사전확인으로 바꾸기](<./ch11)%20refactoring-apis/13)%20replace-exception-with-precheck.md>)             | 안바울 |
 
 ### CHAPTER 12. 상속 다루기
 
-| 기법명                                                                                       |  담당  |
-| :------------------------------------------------------------------------------------------- | :----: |
-| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                | 김민정 |
-| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>) | 김민정 |
-| [4) 메서드 내리기](<./ch12)%20dealing-with-inheritance/04)%20push-down-method.md>)           | 안바울 |
+| 기법명                                                                                                           |  담당  |
+| :--------------------------------------------------------------------------------------------------------------- | :----: |
+| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                                    | 김민정 |
+| [2) 필드 올리기](<./ch12)%20dealing-with-inheritance/02)%20pull-up-field.md>)                                    | 조예진 |
+| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)                     | 김민정 |
+| [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                                    | 조예진 |
+| [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                                  | 안바울 |
+| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
+| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
+| [8) 슈퍼클래스 추출하기](<./ch12)%20dealing-with-inheritance/08)extract-superclass.md>)                          | 김민정 |
+| [9) 계층 합치기](<./ch12)%20dealing-with-inheritance/09)collapse-hierarchy.md>)                                  | 김민정 |
+| [10) 서브클래스를 위임으로 바꾸기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
+| [11) ](<./ch12)%20dealing-with-inheritance/>)                                                                    |   .    |
