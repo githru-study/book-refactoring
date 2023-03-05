@@ -1,12 +1,14 @@
 import {Extra, Show} from "./helper";
 import {PremiumBookingDelegate} from "./PremiumBookingDelegate";
+import {BookingDelegate} from "./BookingDelegate";
 
 export const EXTRA_COAST = 1.15;
 export class Booking {
     public isPeakDay: boolean = false;
-    protected premiumDelegate: PremiumBookingDelegate;
+    protected bookingDelegate: BookingDelegate;
 
     constructor(protected show: Show, protected date: Date) {
+        this.bookingDelegate = new BookingDelegate(this);
     }
 
     public getShow() {
@@ -14,26 +16,23 @@ export class Booking {
     }
 
     public get hasTalkBack() {
-        return this.premiumDelegate
-            ? this.premiumDelegate.hasTalkBack
-            : !!this.show.talkback && !this.isPeakDay;
+        return this.bookingDelegate?.hasTalkBack || false;
     }
 
     public get basePrice() {
-        const base = this.isPeakDay ? Math.round(this.show.price * EXTRA_COAST) : this.show.price;
-        return this.premiumDelegate?.getExtendedBasePrice(base) || base;
+        return this.bookingDelegate?.basePrice || this.show.price;
     }
 
     public get hasDinner() {
-        return this.premiumDelegate?.hasDinner || false;
+        return this.bookingDelegate?.hasDinner || false;
     }
 
     public bePremium(extra: Extra) {
-        this.premiumDelegate = new PremiumBookingDelegate(this, extra);
+        this.bookingDelegate = new PremiumBookingDelegate(this, extra);
     }
 
     public get isPremium() {
-        return !!this.premiumDelegate;
+        return !!this.bookingDelegate && this.bookingDelegate instanceof PremiumBookingDelegate;
     }
 }
 

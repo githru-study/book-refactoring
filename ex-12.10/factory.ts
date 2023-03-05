@@ -1,6 +1,5 @@
 import {Booking} from "./Booking";
 import {Extra, Show} from "./helper";
-import {PremiumBooking} from "./PremiumBooking";
 
 export const createBooking =
     (show: Show, date: Date): Booking =>
