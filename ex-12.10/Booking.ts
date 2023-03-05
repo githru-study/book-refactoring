@@ -1,6 +1,9 @@
 import {Show} from "./helper";
 
+export const EXTRA_COAST = 1.15;
 export class Booking {
+    public isPeakDay: boolean = false;
+
     constructor(protected show: Show, protected date: Date) {
     }
 
@@ -9,11 +12,7 @@ export class Booking {
     }
 
     public get basePrice() {
-        return this.isPeakDay ? Math.round(this.show.price * 1.15) : this.show.price;
-    }
-
-    public get isPeakDay() {
-        return false;
+        return this.isPeakDay ? Math.round(this.show.price * EXTRA_COAST) : this.show.price;
     }
 }
 

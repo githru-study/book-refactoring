@@ -8,10 +8,10 @@ export class Extra {
     public dinner: Dinner;
 }
 
-class Dinner {
+export class Dinner {
 
 }
 
-class TalkBack {
+export class TalkBack {
 
 }
