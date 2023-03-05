@@ -31,5 +31,9 @@ export class Booking {
     public bePremium(extra: Extra) {
         this.premiumDelegate = new PremiumBookingDelegate(this, extra);
     }
+
+    public get isPremium() {
+        return !!this.premiumDelegate;
+    }
 }
 

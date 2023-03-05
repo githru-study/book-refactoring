@@ -29,6 +29,7 @@ describe('예약', () => {
 
         test('인스턴스 확인', () => {
             expect(booking).toBeInstanceOf(Booking);
+            expect(booking.isPremium).toBe(false);
         })
 
         test('피크데이', () =>{
@@ -47,14 +48,15 @@ describe('예약', () => {
     })
 
     describe('프리미엄 예약 클라이언트', () => {
-        let premiumBooking: PremiumBooking;
+        let premiumBooking: Booking;
 
         beforeEach(() => {
             premiumBooking = createPremiumBooking(show, date, extra);
         })
 
         test('인스턴스 확인', () => {
-            expect(premiumBooking).toBeInstanceOf(PremiumBooking);
+            expect(premiumBooking).toBeInstanceOf(Booking);
+            expect(premiumBooking.isPremium).toBe(true);
         })
 
         test('피크데이', () =>{
