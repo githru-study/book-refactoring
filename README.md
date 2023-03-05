@@ -88,33 +88,33 @@
 
 ### CHAPTER 11. API 리팩터링
 
-| 기법명                                                                                                    | 담당  |
-|:-------------------------------------------------------------------------------------------------------|:---:|
+| 기법명                                                                                                              |  담당  |
+| :------------------------------------------------------------------------------------------------------------------ | :----: |
 | [1) 질의 함수와 변경 함수 분리하기](<./ch11)%20refactoring-apis/01)%20separate-query-from-modifier.md>)             | 조예진 |
-| [2) 함수 매개변수화하기](<./ch11)%20refactoring-apis/02)%20parameterize-function.md>)                           | 조예진 |
-| [3) 플래그 인수 제거하기](<./ch11)%20refactoring-apis/03)%20remove-flag-argument.md>)                           | 조예진 |
-| [4) 객체 통째로 넘기기](<./ch11)%refactoring-apis/04)%20preserve-whole-object.md>)                             | 김채정 |
+| [2) 함수 매개변수화하기](<./ch11)%20refactoring-apis/02)%20parameterize-function.md>)                               | 조예진 |
+| [3) 플래그 인수 제거하기](<./ch11)%20refactoring-apis/03)%20remove-flag-argument.md>)                               | 조예진 |
+| [4) 객체 통째로 넘기기](<./ch11)%refactoring-apis/04)%20preserve-whole-object.md>)                                  | 김채정 |
 | [5) 매개변수를 질의 함수로 바꾸기](<./ch11)%20refactoring-apis/05)%20replace-parameter-with-query.md>)              | 안바울 |
 | [6) 질의함수를 매개변수로 바꾸기](<./ch11)%20refactoring-apis/06)%20replace-query-with-parameter.md>)               | 김민정 |
-| [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                              | 조예진 |
+| [7) 세터 제거하기](<./ch11)%20refactoring-apis/07)%20remove-setting-method.md>)                                     | 조예진 |
 | [8) 생성자를 팩터리 함수로 바꾸기](<./ch11)%20refactoring-apis/08)%20replace-constructor-with-factory-function.md>) | 김채정 |
-| [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)                 | 안바울 |
-| [10) 명령을 함수로 바꾸기](<./ch11)%20refactoring-apis/10)replace-command-with-function.md>)                    | 김민정 |
-| [11) 수정된 값 반환하기](<./ch11)%20refactoring-apis/11)%20return-modified-value.md>)                          | 조예진 |
-| [13) 예외를 사전확인으로 바꾸기](<./ch11)%20refactoring-apis/13)%20replace-exception-with-precheck.md>)            | 안바울 |
+| [9) 함수를 명령으로 바꾸기](<./ch11)%20refactoring-apis/09)%20replace-function-with-command.md>)                    | 안바울 |
+| [10) 명령을 함수로 바꾸기](<./ch11)%20refactoring-apis/10)replace-command-with-function.md>)                        | 김민정 |
+| [11) 수정된 값 반환하기](<./ch11)%20refactoring-apis/11)%20return-modified-value.md>)                               | 조예진 |
+| [13) 예외를 사전확인으로 바꾸기](<./ch11)%20refactoring-apis/13)%20replace-exception-with-precheck.md>)             | 안바울 |
 
 ### CHAPTER 12. 상속 다루기
 
-| 기법명                                                                                                 | 담당  |
-|:----------------------------------------------------------------------------------------------------|:---:|
-| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                             | 김민정 |
-| [2) 필드 올리기](<./ch12)%20dealing-with-inheritance/02)%20pull-up-field.md>)                            | 조예진 |
-| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)                | 김민정 |
-| [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                             | 조예진 |
-| [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                          | 안바울 |
-| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
-| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
-| [8) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
-| [9) ](<./ch12)%20dealing-with-inheritance/.md>)                                                     |  .  |
+| 기법명                                                                                                           |  담당  |
+| :--------------------------------------------------------------------------------------------------------------- | :----: |
+| [1) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                                    | 김민정 |
+| [2) 필드 올리기](<./ch12)%20dealing-with-inheritance/02)%20pull-up-field.md>)                                    | 조예진 |
+| [3) 생성자 본문 올리기](<./ch12)%20dealing-with-inheritance/03)pull-up-constructor-body.md>)                     | 김민정 |
+| [4) 메서드 올리기](<./ch12)%20dealing-with-inheritance/01)pull-up-method.md>)                                    | 조예진 |
+| [5) 필드 내리기](<./ch12)%20dealing-with-inheritance/05)%20push-down-field.md>)                                  | 안바울 |
+| [6) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
+| [7) ](<./ch12)%20dealing-with-inheritance/.md>)                                                                  |   .    |
+| [8) 슈퍼클래스 추출하기](<./ch11)%20refactoring-apis/8)08)extract-superclass.md>)                                | 김민정 |
+| [9) 계층 합치기](<./ch11)%20refactoring-apis/09)collapse-hierarchy.md>)                                          | 김민정 |
 | [10) 서브클래스를 위임으로 바꾸기](<./ch12)%20dealing-with-inheritance/10)%20replace-subclass-with-delegate.md>) | 조예진 |
-| [11) ](<./ch12)%20dealing-with-inheritance/>)                                                       |  .  |
+| [11) ](<./ch12)%20dealing-with-inheritance/>)                                                                    |   .    |
